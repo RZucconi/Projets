@@ -1,0 +1,41 @@
+rzucconi@rzucconi-ThinkPad-T440p:~/quetes/shell$ find
+.
+./planets.zip
+./planets
+./planets/fictional
+./planets/fictional/cybertron.jpeg
+./planets/fictional/coruscant.jpeg
+./planets/fictional/arrakis.jpeg
+./planets/inhabited
+./planets/inhabited/cybertron.jpeg
+./planets/inhabited/earth.jpeg
+./planets/inhabited/coruscant.jpeg
+./planets/inhabited/arrakis.jpeg
+./planets/real
+./planets/real/telluric
+./planets/real/telluric/earth.jpeg
+./planets/real/telluric/mars.jpeg
+./planets/real/telluric/mercury.jpeg
+./planets/real/telluric/venus.jpeg
+./planets/real/gas-giants
+./planets/real/gas-giants/neptune.jpeg
+./planets/real/gas-giants/jupiter.jpeg
+./planets/real/gas-giants/uranus.jpeg
+./planets/real/gas-giants/saturn.jpeg
+
+unzip planets.zip
+cd planets
+mkdir real fictional inhabited
+mkdir real/telluric real/gas-giants real/dwarf-planets
+mv earth.jpeg mars.jpeg mercury.jpeg venus.jpeg real/telluric/
+mv jupiter.jpeg neptune.jpeg saturn.jpeg uranus.jpeg real/gas-giants/
+mv pluto.jpeg real/dwarf-planets/
+mv arrakis.jpeg coruscant.jpeg cybertron.jpeg fictional/
+cd real/telluric
+cp earth.jpeg ~/quetes/shell/planets/inhabited/
+cd ~/quetes/shell/planets/fictional
+cp arrakis.jpeg  coruscant.jpeg  cybertron.jpeg ~/quetes/shell/planets/inhabited/
+cd ~/quetes/shell/planets/real
+rm -r dwarf-planets
+
+
