@@ -1,0 +1,9 @@
+rzucconi@rzucconi-ThinkPad-T440p:~$ ls
+Bureau     examples.desktop  Images   Musique  snap             temp  Vidéos
+Documents  gitTemporaire     Modèles  Public   Téléchargements  tmp
+rzucconi@rzucconi-ThinkPad-T440p:~$ cd Images
+rzucconi@rzucconi-ThinkPad-T440p:~/Images$ pwd
+/home/rzucconi/Images
+rzucconi@rzucconi-ThinkPad-T440p:~/Images$ cd /
+rzucconi@rzucconi-ThinkPad-T440p:/$ cd ~
+rzucconi@rzucconi-ThinkPad-T440p:~$ 
